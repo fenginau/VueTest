@@ -1,0 +1,45 @@
+[
+  {
+    "outputFileName": "wwwroot/css/vue.all.css",
+    "inputFiles": [
+      "wwwroot/css/Vue/element-ui.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/style.all.css",
+    "inputFiles": [
+      "wwwroot/css/main.css",
+      "wwwroot/css/component/*.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/vue.all.js",
+    "inputFiles": [
+      "wwwroot/lib/vue/vue.min.js",
+      "wwwroot/lib/vue/vue-router.js",
+      "wwwroot/lib/vue/element-ui.js",
+      "wwwroot/lib/vue/axios.min.js",
+      "wwwroot/lib/vue/base64.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/general.all.js",
+    "inputFiles": [
+      "wwwroot/lib/general/axios.min.js",
+      "wwwroot/lib/general/base64.js",
+      "wwwroot/lib/general/jquery.signalR-2.2.1.min.js",
+      "wwwroot/lib/general/moment.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/scripts.js",
+    "inputFiles": [
+      "wwwroot/js/Scripts/directive/*",
+      "wwwroot/js/Scripts/filter/*",
+      "wwwroot/js/Scripts/factory/*",
+      "wwwroot/js/Scripts/register.js",
+      "wwwroot/js/Scripts/component/*",
+      "wwwroot/js/Scripts/views/*"
+    ]
+  }
+]

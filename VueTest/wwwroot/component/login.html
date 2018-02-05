@@ -1,0 +1,18 @@
+﻿<div v-flex:row.flex>
+    <div class="login-form" v-flex:column.flex v-align:center,center>
+        <el-form ref="form" label-width="120px" :model="loginForm">
+            <el-form-item label="Account:">
+                <el-input placeholder="Email or username" v-model="loginForm.account">
+                </el-input>
+            </el-form-item>
+            <el-form-item label="Password:">
+                <el-input type="password" placeholder="Password" v-model="loginForm.password">
+                </el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" v-on:click="login" class="login-button" size="small">Sign In</el-button>
+                <el-button type="text" v-on:click="forgetPassword">Forget password?</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+</div>

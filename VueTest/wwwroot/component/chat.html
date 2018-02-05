@@ -1,0 +1,31 @@
+﻿<el-container v-flex:column.flex v-loading="loading">
+    <el-header class="chat-header" justify="start">
+        Chat
+    </el-header>
+    <el-main v-flex:column.flex class="chat-main">
+        <div id="test1" class="chat-body" v-flex:column.flex ref="chatbox" v-bottom-scroll="{animate: true, duration: 100}">
+            <div v-for="conversation in conversations">
+                <div v-for="chat in conversation.chats">
+                    <el-row class="chat-row" v-if="chat.isMe" v-flex:column v-align:center,flex-end>
+                        <div class="chat-msg chat-msg-me chat-row color-main" v-flex:column v-align:flex-start,flex-start>
+                            {{chat.message}}
+                        </div>
+                        <div v-flex:row.flex>{{chat.create_Dt | formatDate('lll')}}</div>
+                    </el-row>
+                    <el-row class="chat-row" v-if="!chat.isMe" v-flex:column v-align:center,flex-start>
+                        <div class="chat-msg chat-msg-opposite chat-row color-neutral" v-flex:column v-align:flex-start,flex-start>
+                            {{chat.message}}
+                        </div>
+                        <div v-flex:row.flex>{{chat.create_Dt | formatDate('lll')}}</div>
+                    </el-row>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <el-input placeholder="Message" v-model="message" autosize ref="message" size="large" v-on:keyup.enter.native="enterPress">
+                <el-button slot="append" v-on:click="send()">Send</el-button>
+            </el-input>
+        </div>
+    </el-main>
+</el-container>
+

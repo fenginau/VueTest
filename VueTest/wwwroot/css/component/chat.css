@@ -1,0 +1,48 @@
+﻿.chat-header {
+    font-family: 'Lato-Bold';
+    font-size: 22px;
+    border-bottom: 2px solid #eeeeee;
+    line-height: 60px;
+}
+
+.chat-main {
+    padding: 0;    
+}
+
+.chat-body {
+    padding: 20px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.chat-msg {
+    padding: 16px;
+    max-width: 90%;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.chat-msg-me {
+    border-radius: 15px 0 15px 15px;
+}
+
+.chat-msg-opposite {
+    border-radius: 0 15px 15px 15px;
+}
+
+.chat-row {
+    min-height: 36px;
+}
+
+.chat-input {
+    padding: 16px;
+    background-color: #eeeeee;
+    font-size: 18px;
+}
+
+.chat-input .el-input {
+    font-size: 18px;
+}
+.chat-input input[type="text"] {
+    font-size: 18px;
+}

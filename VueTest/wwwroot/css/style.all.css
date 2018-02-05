@@ -1,0 +1,191 @@
+/* Font */
+@font-face {
+    font-family: 'Calibri';
+    src: url('fonts/Calibri.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('fonts/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url('fonts/Lato-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url('fonts/MinionPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+#app {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-main {
+    background-color: #409EFF;
+    color: #ffffff;
+}
+
+.color-neutral {
+    background-color: #edf2fc;
+    color: #5a5e66;
+}
+.chat-header {
+    font-family: 'Lato-Bold';
+    font-size: 22px;
+    border-bottom: 2px solid #eeeeee;
+    line-height: 60px;
+}
+
+.chat-main {
+    padding: 0;    
+}
+
+.chat-body {
+    padding: 20px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.chat-msg {
+    padding: 16px;
+    max-width: 90%;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.chat-msg-me {
+    border-radius: 15px 0 15px 15px;
+}
+
+.chat-msg-opposite {
+    border-radius: 0 15px 15px 15px;
+}
+
+.chat-row {
+    min-height: 36px;
+}
+
+.chat-input {
+    padding: 16px;
+    background-color: #eeeeee;
+    font-size: 18px;
+}
+
+.chat-input .el-input {
+    font-size: 18px;
+}
+.chat-input input[type="text"] {
+    font-size: 18px;
+}
+.login-form {
+    padding: 20px;
+}
+
+.login-button {
+    width: 100%;
+}
+.main-menu {
+    font-size: 22px;
+    width: 100% !important;
+}
+
+.main-menu-h {
+    min-height: 60px;
+    max-height: 60px;
+    overflow: visible !important;
+}
+
+.main-menu-v {
+    position: absolute;
+    top: 65px;
+    z-index: 2;
+}
+
+.main-menu-bar {
+    min-height: 60px;
+    max-height: 60px;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.el-menu-item {
+    font-size: 22px;
+}
+
+.el-submenu__title {
+    font-size: 22px;
+}
+
+.el-menu {
+    border: 0;
+}
+
+.menu-icon {
+    line-height: 60px;
+    font-size: 22px;
+    cursor: pointer;
+}
